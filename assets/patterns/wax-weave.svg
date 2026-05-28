@@ -1,24 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-  <!-- Symmetric vertical rhythm: orange chevron -> orange triangle band ->
-       blue chevron -> orange triangle band -> (next tile, orange chevron again) -->
-
-  <!-- Orange chevron, peaks UP, at top -->
-  <path d="M 0 30 L 30 0 L 60 30 L 90 0 L 120 30"
-        fill="none" stroke="#E8761B" stroke-width="3" stroke-linecap="round"/>
-
-  <!-- Orange triangle band between orange chevron and blue chevron -->
-  <g fill="#E8761B">
-    <polygon points="30,42 38,50 22,50"/>
-    <polygon points="90,42 98,50 82,50"/>
+  <!-- Mudcloth / Pueblo geometric weave: chevrons, triangles, dots -->
+  <g fill="none" stroke-width="3" stroke-linecap="round">
+    <path d="M0 30 L30 0 L60 30 L90 0 L120 30" stroke="#E8761B"/>
+    <path d="M0 60 L30 90 L60 60 L90 90 L120 60" stroke="#2BB6C9"/>
   </g>
-
-  <!-- Blue chevron, peaks DOWN, in middle -->
-  <path d="M 0 60 L 30 90 L 60 60 L 90 90 L 120 60"
-        fill="none" stroke="#2BB6C9" stroke-width="3" stroke-linecap="round"/>
-
-  <!-- Orange triangle band just before next tile's orange chevron -->
-  <g fill="#E8761B">
-    <polygon points="30,102 38,110 22,110"/>
-    <polygon points="90,102 98,110 82,110"/>
+  <g>
+    <polygon points="60,58 71,38 49,38" fill="#2BB6C9"/>
+    <polygon points="0,98 11,118 -11,118" fill="#E8761B"/>
+    <polygon points="120,98 131,118 109,118" fill="#E8761B"/>
+    <circle cx="60" cy="108" r="3.2" fill="#E8761B"/>
+    <circle cx="0" cy="60" r="3.2" fill="#2BB6C9"/>
+    <circle cx="120" cy="60" r="3.2" fill="#2BB6C9"/>
+    <circle cx="30" cy="42" r="2.4" fill="#E8761B"/>
+    <circle cx="90" cy="42" r="2.4" fill="#E8761B"/>
   </g>
 </svg>

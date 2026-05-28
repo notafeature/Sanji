@@ -375,13 +375,18 @@
     color: rgba(44,24,16,0.8);
   }
 
-  /* ── CONTACT ── */
+  /* ── CONTACT / FOOTER (aurora cap) ── */
   .contact {
-    background: var(--deep-earth);
+    background:
+      linear-gradient(to bottom, rgba(21,16,12,0.45) 0%, rgba(21,16,12,0.80) 100%),
+      url('assets/photos/taos-aurora-footer.jpg') center / cover no-repeat,
+      var(--night);
     color: var(--warm-cream);
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 4.5rem 2rem 5rem;
   }
+
+  .contact .press-kit-link { margin-top: 2.5rem; }
 
   .contact .section-label { color: var(--ochre); }
 
@@ -443,17 +448,7 @@
   }
 
 
-  /* ── PRESS KIT BANNER (footer aurora cap) ── */
-  .press-kit-banner {
-    background:
-      linear-gradient(to bottom, rgba(21,16,12,0.40) 0%, rgba(21,16,12,0.75) 100%),
-      url('assets/photos/taos-aurora-footer.jpg') center / cover no-repeat,
-      var(--night);
-    padding: 4.5rem 2rem 5rem;
-    text-align: center;
-    min-height: 280px;
-  }
-
+  /* ── PRESS KIT BUTTON ── */
   .press-kit-link {
     display: inline-flex;
     flex-direction: column;
@@ -505,14 +500,12 @@
 
   /* ── DARK-SECTION WAX TEXTURE (mudcloth weave over deep-earth) ── */
   .video-section,
-  .contact,
-  .press-kit-banner {
+  .contact {
     position: relative;
     overflow: hidden;
   }
   .video-section::before,
-  .contact::before,
-  .press-kit-banner::before {
+  .contact::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -521,14 +514,12 @@
     pointer-events: none;
   }
   /* Per-section variance so they don't feel identical */
-  .video-section::before    { background-size: 120px 120px; opacity: 0.14; }
-  .contact::before          { background-size: 132px 132px; opacity: 0.12; }
-  .press-kit-banner::before { background-size: 96px  96px;  opacity: 0.15; }
+  .video-section::before { background-size: 120px 120px; opacity: 0.14; }
+  .contact::before       { background-size: 132px 132px; opacity: 0.12; }
 
   /* Keep content above the texture */
   .video-section > *,
-  .contact > *,
-  .press-kit-banner > * {
+  .contact > * {
     position: relative;
   }
 
@@ -755,18 +746,13 @@
         <a href="https://www.youtube.com/@SANJI_band" target="_blank" rel="noopener">YouTube</a>
         <a href="https://www.instagram.com/sanji_band/" target="_blank" rel="noopener">Instagram</a>
       </div>
+      <a href="sanji-press-kit.html" class="press-kit-link">
+        <span class="press-kit-label">For Bookers &amp; Venues</span>
+        <span class="press-kit-title">Press Kit &amp; Stage Plot</span>
+        <span class="press-kit-arrow">&rarr;</span>
+      </a>
     </div>
   </section>
-
-
-  <!-- PRESS KIT LINK -->
-  <div class="press-kit-banner">
-    <a href="sanji-press-kit.html" class="press-kit-link">
-      <span class="press-kit-label">For Bookers &amp; Venues</span>
-      <span class="press-kit-title">Press Kit &amp; Stage Plot</span>
-      <span class="press-kit-arrow">&rarr;</span>
-    </a>
-  </div>
 
   <div class="copyright">&copy; 2026 SANJI &middot; Spirit Rain Music</div>
 
