@@ -11,30 +11,24 @@
   </defs>
 
   <!-- Concentric stroke stack creates the inline (parallel-line) effect.
-       Alternating white/black bands of decreasing width = visible white grooves. -->
+       6 layers of alternating white/black = 3 visible white grooves per stroke. -->
   <g fill="none" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="6">
     <g stroke="#FFFFFF" stroke-width="24">
       <use href="#ltr-s"/><use href="#ltr-a"/><use href="#ltr-n"/><use href="#ltr-j"/><use href="#ltr-i"/>
     </g>
-    <g stroke="#0E0E0E" stroke-width="21">
+    <g stroke="#0E0E0E" stroke-width="20">
       <use href="#ltr-s"/><use href="#ltr-a"/><use href="#ltr-n"/><use href="#ltr-j"/><use href="#ltr-i"/>
     </g>
-    <g stroke="#FFFFFF" stroke-width="18">
+    <g stroke="#FFFFFF" stroke-width="16">
       <use href="#ltr-s"/><use href="#ltr-a"/><use href="#ltr-n"/><use href="#ltr-j"/><use href="#ltr-i"/>
     </g>
-    <g stroke="#0E0E0E" stroke-width="15">
+    <g stroke="#0E0E0E" stroke-width="12">
       <use href="#ltr-s"/><use href="#ltr-a"/><use href="#ltr-n"/><use href="#ltr-j"/><use href="#ltr-i"/>
     </g>
-    <g stroke="#FFFFFF" stroke-width="12">
+    <g stroke="#FFFFFF" stroke-width="8">
       <use href="#ltr-s"/><use href="#ltr-a"/><use href="#ltr-n"/><use href="#ltr-j"/><use href="#ltr-i"/>
     </g>
-    <g stroke="#0E0E0E" stroke-width="9">
-      <use href="#ltr-s"/><use href="#ltr-a"/><use href="#ltr-n"/><use href="#ltr-j"/><use href="#ltr-i"/>
-    </g>
-    <g stroke="#FFFFFF" stroke-width="6">
-      <use href="#ltr-s"/><use href="#ltr-a"/><use href="#ltr-n"/><use href="#ltr-j"/><use href="#ltr-i"/>
-    </g>
-    <g stroke="#0E0E0E" stroke-width="3">
+    <g stroke="#0E0E0E" stroke-width="4">
       <use href="#ltr-s"/><use href="#ltr-a"/><use href="#ltr-n"/><use href="#ltr-j"/><use href="#ltr-i"/>
     </g>
   </g>
