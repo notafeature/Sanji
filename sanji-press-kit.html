@@ -50,32 +50,39 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(rgba(244,197,24,0.14) 1.4px, transparent 1.7px);
-    background-size: 14px 14px;
-    mix-blend-mode: overlay;
-    opacity: 0.5;
+    background-image: url('assets/patterns/wax-weave.svg');
+    background-size: 120px 120px;
+    opacity: 0.14;
     pointer-events: none;
   }
+
+  .pk-logo-link {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+
+  .pk-logo {
+    display: block;
+    width: clamp(220px, 50vw, 440px);
+    height: auto;
+    filter: drop-shadow(0 0 18px rgba(232,118,27,0.3));
+    transition: transform 0.25s ease;
+  }
+
+  .pk-logo-link:hover .pk-logo { transform: translateY(-2px); }
 
   .pk-eyebrow {
     position: relative;
     z-index: 1;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     letter-spacing: 0.4em;
     text-transform: uppercase;
     color: var(--pop-yellow);
     font-weight: 600;
-    margin-bottom: 0.75rem;
-  }
-
-  .pk-title {
-    position: relative;
-    z-index: 1;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    line-height: 0.95;
+    margin-bottom: 0.5rem;
   }
 
   .pk-sub {
@@ -181,6 +188,27 @@
     color: var(--warm-cream);
     text-align: center;
     padding: 3rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .booking::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/patterns/wax-weave.svg');
+    background-size: 132px 132px;
+    opacity: 0.12;
+    pointer-events: none;
+  }
+  .booking > * { position: relative; }
+
+  .stage-plot-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid rgba(44,24,16,0.1);
+    margin-bottom: 0.75rem;
   }
   .booking a { color: var(--pop-yellow); text-decoration: none; }
   .booking a:hover { color: var(--warm-cream); }
@@ -205,8 +233,10 @@
 <body>
 
   <header class="pk-hero">
+    <a href="index.html" class="pk-logo-link" aria-label="Back to SANJI home">
+      <img class="pk-logo" src="assets/logos/sanji-logo-transparent.png" alt="SANJI">
+    </a>
     <p class="pk-eyebrow">Press Kit</p>
-    <h1 class="pk-title">SANJI</h1>
     <p class="pk-sub">West African Roots · Modern Fire</p>
   </header>
 
@@ -215,7 +245,7 @@
     <section class="pk">
       <h2>About</h2>
       <p class="pk-lead">
-        Born from the <em>Doso</em> hunter's tradition of West Africa, the N'goni carries a healing
+        Born from the <em>Donso</em> hunter's tradition of West Africa, the N'goni carries a healing
         resonance that has moved people for centuries. SANJI brings these ancient instruments into a
         contemporary American context — five musicians channeling the deep-rooted power of the
         Kamale N'goni, djembe, and voice into something visceral, danceable, and alive.
@@ -226,7 +256,7 @@
       <h2>At a Glance</h2>
       <ul class="facts">
         <li><span class="label">Genre</span>West African roots / world-fusion</li>
-        <li><span class="label">Based in</span>New Mexico, USA</li>
+        <li><span class="label">Based in</span>Taos, NM, USA</li>
         <li><span class="label">Lineup</span>5 musicians</li>
         <li><span class="label">Core instruments</span>Kamale N'goni, djembe, calabash, vocals</li>
       </ul>
@@ -235,7 +265,7 @@
     <section class="pk">
       <h2>Lineup</h2>
       <ul class="lineup">
-        <li><span class="name">Miles Anderson</span><span class="role">Kamale N'goni · Lead Vocals · Dununba</span></li>
+        <li><span class="name">Miles Anderson</span><span class="role">Kamale N'goni · Lead Vocals · Dunnun</span></li>
         <li><span class="name">Rob Usher</span><span class="role">Kamale N'goni · Djembe · Karinyan · Calabash</span></li>
         <li><span class="name">Mitchell Olson</span><span class="role">Kamale N'goni · Calabash · Dundun</span></li>
         <li><span class="name">Adam Wall</span><span class="role">Djembe · Vocals · Managing Member</span></li>
@@ -254,31 +284,37 @@
     </section>
 
     <section class="pk">
-      <h2>Shared the Stage With</h2>
+      <h2>Stages Shared</h2>
       <div class="chips">
         <span class="chip">Bassekou Kouyaté</span>
         <span class="chip">The Original Wailers</span>
         <span class="chip">Dirtwire</span>
-        <span class="chip">Sonja Diabaté</span>
+        <span class="chip">Sona Jobarteh</span>
         <span class="chip">Mokoomba</span>
         <span class="chip">Zar Electrik</span>
         <span class="chip">Biko Casini</span>
-        <span class="chip">White Raven</span>
+        <span class="chip">Snow Raven</span>
       </div>
     </section>
 
     <section class="pk">
       <h2>Stage Plot &amp; Tech</h2>
-      <div class="placeholder-box">Stage plot and input list coming soon — drop the final PDF/image at <code>assets/stage-plot</code> and we'll link it here.</div>
+      <img class="stage-plot-img" src="assets/epk/Stage%20Plot/stage_plot_color_light.png" alt="SANJI stage plot">
+      <div class="downloads">
+        <a class="download-link" href="assets/epk/Stage%20Plot/stage_plot_bw.pdf" target="_blank" rel="noopener">Stage Plot (B&amp;W PDF)</a>
+        <a class="download-link" href="assets/epk/Stage%20Plot/Sanji_Input_List.pdf" target="_blank" rel="noopener">Input List (PDF)</a>
+        <a class="download-link" href="assets/epk/Stage%20Rider/Sanji%20EPK%20-%20Tech%20Rider.pdf" target="_blank" rel="noopener">Tech Rider (PDF)</a>
+      </div>
     </section>
 
     <section class="pk">
       <h2>Downloads</h2>
-      <p style="font-size:0.9rem;color:rgba(44,24,16,0.65);">High-res photos, logo, and one-sheet for press and venues.</p>
+      <p style="font-size:0.9rem;color:rgba(44,24,16,0.65);">Logo, tech rider, and press assets for venues. (High-res band photos coming soon.)</p>
       <div class="downloads">
-        <a class="download-link" href="assets/photos/">Band Photos</a>
-        <a class="download-link" href="favicon.svg">Logo</a>
-        <a class="download-link" href="#" aria-disabled="true">One-Sheet (PDF) — soon</a>
+        <a class="download-link" href="assets/logos/Sanji_Logo-option%20HD.png" target="_blank" rel="noopener">Logo (PNG)</a>
+        <a class="download-link" href="assets/epk/Stage%20Rider/Sanji%20EPK%20-%20Tech%20Rider.pdf" target="_blank" rel="noopener">Tech Rider</a>
+        <a class="download-link" href="assets/epk/Stage%20Plot/Sanji_Input_List.pdf" target="_blank" rel="noopener">Input List</a>
+        <a class="download-link" href="#" aria-disabled="true">Band Photos — soon</a>
       </div>
     </section>
 
