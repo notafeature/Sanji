@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SANJI — West African Roots Music</title>
+<meta name="description" content="SANJI — West African roots music with modern fire. Five musicians channeling the Kamale N'goni, djembe, and voice into something visceral, danceable, and alive. Available for booking.">
+<meta name="theme-color" content="#2C1810">
+<link rel="canonical" href="https://sanji.band/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SANJI">
+<meta property="og:title" content="SANJI — West African Roots Music">
+<meta property="og:description" content="Heavy roots. Super danceable. A bridge between ancient West African tradition and the present moment.">
+<meta property="og:url" content="https://sanji.band/">
+<meta property="og:image" content="https://sanji.band/assets/photos/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SANJI — West African Roots Music">
+<meta name="twitter:description" content="Heavy roots. Super danceable. A bridge between ancient West African tradition and the present moment.">
+<meta name="twitter:image" content="https://sanji.band/assets/photos/og-cover.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ochre: #C4873B;
+    --burnt: #A0522D;
+    --deep-earth: #2C1810;
+    --warm-cream: #F5EDE0;
+    --sand: #E8D5B7;
+    --charcoal: #1A1A1A;
+    --dust: #D4B896;
+    --gold: #D4A843;
+    /* pop-art accents (from band poster vibe) */
+    --pop-yellow: #F4C518;
+    --pop-red: #E3372A;
+    --pop-teal: #1FA597;
+    --pop-magenta: #B5359B;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--warm-cream);
+    color: var(--deep-earth);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    /* Swap this gradient for `url('assets/photos/hero.jpg') center/cover` once a hero photo lands. */
+    background: linear-gradient(150deg, #3a1d12 0%, var(--deep-earth) 45%, #140a05 100%);
+    color: var(--warm-cream);
+  }
+
+  /* Pop-art color glows (sampled from the band poster) */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 50% 45% at 22% 28%, rgba(31,165,151,0.30) 0%, transparent 60%),
+      radial-gradient(ellipse 45% 45% at 80% 22%, rgba(227,55,42,0.26) 0%, transparent 55%),
+      radial-gradient(ellipse 55% 50% at 72% 85%, rgba(244,197,24,0.22) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 40% at 28% 82%, rgba(181,53,155,0.20) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* Halftone dot texture */
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(244,197,24,0.14) 1.4px, transparent 1.7px);
+    background-size: 14px 14px;
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeUp 1s ease-out;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .band-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(4rem, 12vw, 9rem);
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    line-height: 0.9;
+    color: var(--warm-cream);
+    margin-bottom: 0.5rem;
+  }
+
+  .band-tagline {
+    font-size: clamp(0.85rem, 2vw, 1.1rem);
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+  }
+
+  .hero-cta {
+    display: inline-block;
+    padding: 0.9rem 2.8rem;
+    border: 1.5px solid var(--pop-yellow);
+    color: var(--pop-yellow);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .hero-cta:hover {
+    background: var(--pop-yellow);
+    color: var(--deep-earth);
+  }
+
+  /* ── SHARED SECTION STYLES ── */
+  section { padding: 5rem 2rem; }
+  .container { max-width: 800px; margin: 0 auto; }
+
+  .section-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--burnt);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  /* ── ABOUT ── */
+  .about { background: var(--warm-cream); }
+
+  .about-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    line-height: 1.6;
+    color: var(--deep-earth);
+    font-weight: 400;
+  }
+
+  .about-text em { color: var(--burnt); font-style: italic; }
+
+  .about-sub {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: rgba(44,24,16,0.75);
+  }
+
+  /* ── DIVIDER ── */
+  .divider { width: 60px; height: 2px; background: var(--ochre); margin: 0 auto; }
+  .divider-section { padding: 0 2rem; }
+
+  /* ── VIDEO ── */
+  .video-section {
+    background: var(--deep-earth);
+    color: var(--warm-cream);
+    text-align: center;
+  }
+
+  .video-section .section-label { color: var(--ochre); }
+
+  .video-player {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    display: block;
+    background: #000;
+    border: 1px solid rgba(196,135,59,0.3);
+    border-radius: 4px;
+  }
+
+  /* ── SHARED STAGES ── */
+  .stages { background: var(--sand); text-align: center; }
+
+  .artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 1.8rem;
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .artist-list li {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--deep-earth);
+    padding: 0.3rem 0;
+    white-space: nowrap;
+  }
+
+  .artist-list li::before {
+    content: '·';
+    margin-right: 0.3rem;
+    color: var(--ochre);
+    font-weight: 700;
+  }
+
+  /* ── FESTIVALS ── */
+  .festivals { background: var(--warm-cream); text-align: center; }
+
+  .festival-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem 3rem;
+    margin-top: 0.5rem;
+  }
+
+  .festival-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .festival-logo-placeholder {
+    width: 140px;
+    height: 90px;
+    border: 1.5px solid rgba(44,24,16,0.12);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    background: rgba(255,255,255,0.5);
+    transition: border-color 0.3s;
+  }
+
+  .festival-logo-placeholder:hover { border-color: var(--ochre); }
+
+  .festival-logo-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--deep-earth);
+    line-height: 1.2;
+  }
+
+  .festival-caption {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(44,24,16,0.45);
+  }
+
+  /* ── MEMBERS ACCORDION ── */
+  .members { background: var(--warm-cream); }
+
+  .member-accordion { margin-top: 1rem; max-width: 800px; }
+
+  .member-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 0;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(44,24,16,0.08);
+    transition: all 0.2s;
+    user-select: none;
+  }
+
+  .member-header:hover { padding-left: 0.3rem; }
+
+  .member-header-left {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .member-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--deep-earth);
+  }
+
+  .member-role {
+    font-size: 0.78rem;
+    color: var(--burnt);
+    letter-spacing: 0.05em;
+  }
+
+  .member-toggle {
+    font-size: 1.2rem;
+    color: var(--ochre);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .member-item.active .member-toggle { transform: rotate(45deg); }
+
+  .member-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+  }
+
+  .member-item.active .member-body {
+    max-height: 1000px;
+    padding: 1rem 0 1.5rem 0;
+  }
+
+  .member-body-inner {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .member-photo-placeholder {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    border-radius: 4px;
+    background: var(--sand);
+    border: 1.5px dashed rgba(44,24,16,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(44,24,16,0.3);
+  }
+
+  .member-bio-placeholder {
+    color: rgba(44,24,16,0.35);
+    font-style: italic;
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+
+
+  .member-photo {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+
+  .member-bio {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: rgba(44,24,16,0.8);
+  }
+
+  /* ── CONTACT ── */
+  .contact {
+    background: var(--deep-earth);
+    color: var(--warm-cream);
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .contact .section-label { color: var(--ochre); }
+
+  .contact-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  .contact-title {
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--dust);
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-details a {
+    color: var(--ochre);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+
+  .contact-details a:hover { color: var(--warm-cream); }
+
+  .socials {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .socials a {
+    color: var(--dust);
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+  }
+
+  .socials a:hover {
+    color: var(--ochre);
+    border-bottom-color: var(--ochre);
+  }
+
+
+  /* ── PRESS KIT BANNER ── */
+  .press-kit-banner {
+    background: var(--deep-earth);
+    padding: 2rem 2rem 2.5rem;
+    text-align: center;
+  }
+
+  .press-kit-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    padding: 1.8rem 4rem;
+    border: 2px solid var(--ochre);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .press-kit-link:hover {
+    background: var(--ochre);
+  }
+
+  .press-kit-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--dust);
+    font-weight: 500;
+  }
+
+  .press-kit-link:hover .press-kit-label {
+    color: var(--deep-earth);
+  }
+
+  .press-kit-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--ochre);
+    letter-spacing: 0.05em;
+  }
+
+  .press-kit-link:hover .press-kit-title {
+    color: var(--deep-earth);
+  }
+
+  .press-kit-arrow {
+    font-size: 1.2rem;
+    color: var(--ochre);
+    transition: transform 0.3s ease;
+  }
+
+  .press-kit-link:hover .press-kit-arrow {
+    color: var(--deep-earth);
+    transform: translateX(6px);
+  }
+
+  @media (max-width: 600px) {
+    .press-kit-link { padding: 1.4rem 2.5rem; }
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--charcoal);
+    color: rgba(245,237,224,0.3);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    section { padding: 3.5rem 1.5rem; }
+    .artist-list { flex-direction: column; align-items: center; gap: 0.3rem; }
+    .socials { flex-direction: column; gap: 1rem; align-items: center; }
+    .member-header-left { flex-direction: column; gap: 0.15rem; }
+    .member-body-inner { flex-direction: column; gap: 1rem; }
+    .member-photo-placeholder { width: 80px; height: 80px; min-width: 80px; }
+    .festival-grid { gap: 2rem 2rem; }
+    .festival-logo-placeholder { width: 120px; height: 75px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="band-name">SANJI</h1>
+      <p class="band-tagline">West African Roots · Modern Fire</p>
+      <a href="#contact" class="hero-cta">Book Us</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="container">
+      <p class="section-label">Why This Music Matters</p>
+      <p class="about-text">
+        This music is older than all of us. Born from the <em>Doso</em> hunter's tradition of West Africa,
+        the N'goni carries a healing resonance that has moved people to tears, to joy, and through
+        profound transformation for centuries.
+      </p>
+      <p class="about-sub">
+        SANJI brings these ancient instruments into a contemporary American context — five musicians channeling
+        the deep-rooted power of the Kamale N'goni, djembe, and voice into something
+        visceral, danceable, and alive. Heavy roots. Super danceable. A bridge between
+        tradition and the present moment.
+      </p>
+    </div>
+  </section>
+
+  <div class="divider-section"><div class="divider"></div></div>
+
+  <!-- VIDEO -->
+  <section class="video-section">
+    <div class="container">
+      <p class="section-label">Live</p>
+      <!-- Drop the finished video at assets/video/sanji-live.mp4 (and a still frame at assets/photos/video-poster.jpg). -->
+      <video class="video-player" controls preload="metadata" playsinline poster="assets/photos/video-poster.jpg">
+        <source src="assets/video/sanji-live.mp4" type="video/mp4">
+        Your browser doesn't support embedded video.
+      </video>
+    </div>
+  </section>
+
+  <!-- SHARED STAGES -->
+  <section class="stages">
+    <div class="container">
+      <p class="section-label">Shared the Stage With</p>
+      <ul class="artist-list">
+        <li>Bassekou Kouyaté</li>
+        <li>The Original Wailers</li>
+        <li>Dirtwire</li>
+        <li>Sonja Diabaté</li>
+        <li>Mokoomba</li>
+        <li>Zar Electrik</li>
+        <li>Biko Casini</li>
+        <li>White Raven</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FESTIVALS -->
+  <section class="festivals">
+    <div class="container">
+      <p class="section-label">Festivals &amp; Notable Performances</p>
+      <div class="festival-grid">
+        <div class="festival-item">
+          <div class="festival-logo-placeholder">
+            <span class="festival-logo-text">Rise &amp;<br>Vibes</span>
+          </div>
+          <span class="festival-caption">Tico Time River Resort · 2025</span>
+        </div>
+        <div class="festival-item">
+          <div class="festival-logo-placeholder">
+            <span class="festival-logo-text">Tico Time<br>Reggae Fest</span>
+          </div>
+          <span class="festival-caption">Aztec, NM</span>
+        </div>
+        <div class="festival-item">
+          <div class="festival-logo-placeholder">
+            <span class="festival-logo-text">Crestone<br>Energy Fair</span>
+          </div>
+          <span class="festival-caption">Crestone, CO · 2024</span>
+        </div>
+        <div class="festival-item">
+          <div class="festival-logo-placeholder">
+            <span class="festival-logo-text">Unison<br>Festival</span>
+          </div>
+          <span class="festival-caption">Tico Time River Resort</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider-section"><div class="divider"></div></div>
+
+  <!-- MEMBERS -->
+  <section class="members">
+    <div class="container">
+      <p class="section-label">The Band</p>
+      <div class="member-accordion">
+
+        <div class="member-item">
+          <div class="member-header" onclick="toggleMember(this)">
+            <div class="member-header-left">
+              <span class="member-name">Miles Anderson</span>
+              <span class="member-role">Kamale N'goni · Lead Vocals · Dununba</span>
+            </div>
+            <span class="member-toggle">+</span>
+          </div>
+          <div class="member-body">
+            <div class="member-body-inner">
+              <img class="member-photo" src="assets/photos/members/miles-anderson.jpg" alt="Miles Anderson" loading="lazy" width="100" height="100">
+              <p class="member-bio">Miles Anderson grew up in Albuquerque, NM. He started playing drumkit when he was 9. He has been around music from the African diaspora since he was a little boy. His parents are world music fans, and he remembers going to dance parties with Albuquerque legends Wagogo banda as a child and listening to Ali Farka Touré on road trips. He has been building, studying, and playing kamale ngoni for 10+ years. He has traveled and studied in Bobo Dioulasso, Burkina Faso. His teachers include Arouna Diarra, Tani Diakite, and Siakka Diarra.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-item">
+          <div class="member-header" onclick="toggleMember(this)">
+            <div class="member-header-left">
+              <span class="member-name">Rob Usher</span>
+              <span class="member-role">Kamale N'goni · Djembe · Karinyan · Calabash</span>
+            </div>
+            <span class="member-toggle">+</span>
+          </div>
+          <div class="member-body">
+            <div class="member-body-inner">
+              <img class="member-photo" src="assets/photos/members/rob-usher.jpg" alt="Rob Usher" loading="lazy" width="100" height="100">
+              <p class="member-bio">From the moment Rob Usher first picked up the kamale ngoni, he knew it was something he would follow for the rest of his life. Over the past 15 years, that first recognition has grown into a deep commitment to the study of traditional kamale ngoni music, shaped by long practice, close listening, and guidance from teachers including Mamadou Sidibe. His playing reflects both a broad technical range and a deep relationship to traditional repertoire, carried with care, discipline, and respect for the lineage. At the center of it is a simple devotion to the instrument itself: each time he holds the n’goni, he returns to the same joy and peace that first called him to it.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-item">
+          <div class="member-header" onclick="toggleMember(this)">
+            <div class="member-header-left">
+              <span class="member-name">Mitchell Olson</span>
+              <span class="member-role">Kamale N'goni · Calabash · Dundun</span>
+            </div>
+            <span class="member-toggle">+</span>
+          </div>
+          <div class="member-body">
+            <div class="member-body-inner">
+              <img class="member-photo" src="assets/photos/members/mitchell-olson.jpg" alt="Mitchell Olson" loading="lazy" width="100" height="100">
+              <p class="member-bio">Mitchell Olson knew from a young age that the whole world could be percussion. Growing up in Albuquerque in a creative community, with a visual artist mother and early jazz fusion influences at home, he was drawn early to rhythm, texture, and sound. After seeing Stomp at Popejoy Hall as a child, that instinct came fully alive — first on pots and pans at home, then on the drum kit he raised his own money to buy, and later under the guidance of Rob Janov in the Rockin’ Rhythm Band at Jefferson Middle School. His musical path moved through punk, ska, psychedelic rock, and experimental music, shaped along the way by Celtic sounds and deep involvement in central New Mexico’s African dance and drumming community. In his teens, being introduced to the kamale n’goni by Will alongside Miles Anderson opened the path that would eventually lead to Sanji.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-item">
+          <div class="member-header" onclick="toggleMember(this)">
+            <div class="member-header-left">
+              <span class="member-name">Adam Wall</span>
+              <span class="member-role">Djembe · Vocals</span>
+            </div>
+            <span class="member-toggle">+</span>
+          </div>
+          <div class="member-body">
+            <div class="member-body-inner">
+              <div class="member-photo-placeholder">Photo</div>
+              <p class="member-bio-placeholder">Bio coming soon.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="member-item">
+          <div class="member-header" onclick="toggleMember(this)">
+            <div class="member-header-left">
+              <span class="member-name">Fred Simpson</span>
+              <span class="member-role">Spiritual Advisor · Calabash · Djembe · Vocals</span>
+            </div>
+            <span class="member-toggle">+</span>
+          </div>
+          <div class="member-body">
+            <div class="member-body-inner">
+              <img class="member-photo" src="assets/photos/members/fred-simpson.jpg" alt="Fred Simpson" loading="lazy" width="100" height="100">
+              <p class="member-bio">Baba Fred Simpson began drumming as a toddler on his mother’s pots and pans. He received his first conga drum at age 20 and began his professional career accompanying modern dance classes at UC Santa Cruz. From there, his path took him to New York City to work with the NYU School of the Arts, where he studied Congolese music and dance with Titos Sompa. Over the course of his career, he has continuously taught music, built drums, and studied traditions from Congo, Guinea, Senegal, Haiti, and beyond. His life in music has taken him to Africa six times, and he has remained deeply connected to the development of African dance companies in the United States, including the renowned Tanawa, Fua Dia Congo, and Chedo Senegalese Dance Companies. Currently based in Santa Fe, New Mexico, where he has lived for over 20 years, Baba Fred teaches Congolese music informed by a lifelong practice and deep connection to West African percussion from Guinea in the tradition of his teacher and friend, Mamady Keïta.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-label">Booking</p>
+      <p class="contact-name">Adam Wall</p>
+      <p class="contact-title">Managing Member</p>
+      <ul class="contact-details">
+        <li><a href="mailto:SpiritRainMusic@gmail.com">SpiritRainMusic@gmail.com</a></li>
+        <li><a href="tel:+19739451979">(973) 945-1979</a></li>
+      </ul>
+      <div class="socials">
+        <a href="https://www.youtube.com/@SANJI_band" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com/sanji_band/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRESS KIT LINK -->
+  <div class="press-kit-banner">
+    <a href="sanji-press-kit.html" class="press-kit-link">
+      <span class="press-kit-label">For Bookers &amp; Venues</span>
+      <span class="press-kit-title">Press Kit &amp; Stage Plot</span>
+      <span class="press-kit-arrow">&rarr;</span>
+    </a>
+  </div>
+
+  <div class="copyright">&copy; 2026 SANJI &middot; Spirit Rain Music</div>
+
+  <script>
+    function toggleMember(header) {
+      const item = header.parentElement;
+      const wasActive = item.classList.contains('active');
+
+      // Close all
+      document.querySelectorAll('.member-item').forEach(el => {
+        el.classList.remove('active');
+      });
+
+      // Open clicked (unless already open)
+      if (!wasActive) {
+        item.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
