@@ -265,6 +265,13 @@
     line-height: 1.2;
   }
 
+  .festival-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
   .festival-caption {
     font-size: 0.65rem;
     letter-spacing: 0.15em;
@@ -590,18 +597,20 @@
   <section class="video-section">
     <div class="container">
       <p class="section-label">Live</p>
-      <!-- Drop the finished video at assets/video/sanji-live.mp4 (and a still frame at assets/photos/video-poster.jpg). -->
-      <video class="video-player" controls preload="metadata" playsinline poster="assets/photos/video-poster.jpg">
-        <source src="assets/video/sanji-live.mp4" type="video/mp4">
-        Your browser doesn't support embedded video.
-      </video>
+      <iframe class="video-player"
+              src="https://www.youtube-nocookie.com/embed/EojWn3z9sKM?rel=0&modestbranding=1"
+              title="SANJI live performance"
+              loading="lazy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
     </div>
   </section>
 
   <!-- SHARED STAGES -->
   <section class="stages">
     <div class="container">
-      <p class="section-label">Shared the Stage With</p>
+      <p class="section-label">Stages Shared</p>
       <ul class="artist-list">
         <li>Bassekou Kouyaté</li>
         <li>The Original Wailers</li>
@@ -622,25 +631,25 @@
       <div class="festival-grid">
         <div class="festival-item">
           <div class="festival-logo-placeholder">
-            <span class="festival-logo-text">Rise &amp;<br>Vibes</span>
+            <img class="festival-logo" src="assets/logos/Festival%20Logos/Rise-And-Vibes.webp" alt="Rise &amp; Vibes" loading="lazy">
           </div>
           <span class="festival-caption">Tico Time River Resort · 2025</span>
         </div>
         <div class="festival-item">
           <div class="festival-logo-placeholder">
-            <span class="festival-logo-text">Tico Time<br>Reggae Fest</span>
+            <img class="festival-logo" src="assets/logos/Festival%20Logos/Tico-Time-Reggae-Fest.jpg" alt="Tico Time Reggae Fest" loading="lazy">
           </div>
           <span class="festival-caption">Aztec, NM</span>
         </div>
         <div class="festival-item">
           <div class="festival-logo-placeholder">
-            <span class="festival-logo-text">Crestone<br>Energy Fair</span>
+            <img class="festival-logo" src="assets/logos/Festival%20Logos/crestone%20energy%20fair.webp" alt="Crestone Energy Fair" loading="lazy">
           </div>
           <span class="festival-caption">Crestone, CO · 2024</span>
         </div>
         <div class="festival-item">
           <div class="festival-logo-placeholder">
-            <span class="festival-logo-text">Unison<br>Festival</span>
+            <img class="festival-logo" src="assets/logos/Festival%20Logos/unison-logo-256x256-1-1024x1024.png" alt="Unison Festival" loading="lazy">
           </div>
           <span class="festival-caption">Tico Time River Resort</span>
         </div>
