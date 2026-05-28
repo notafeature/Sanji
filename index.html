@@ -23,7 +23,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&family=Monoton&display=swap" rel="stylesheet">
 <style>
   :root {
     --ochre: #C4873B;
@@ -34,11 +34,11 @@
     --charcoal: #1A1A1A;
     --dust: #D4B896;
     --gold: #D4A843;
-    /* pop-art accents (from band poster vibe) */
-    --pop-yellow: #F4C518;
-    --pop-red: #E3372A;
-    --pop-teal: #1FA597;
-    --pop-magenta: #B5359B;
+    /* wax-fabric × high-desert accents */
+    --orange: #E8761B;
+    --turquoise: #2BB6C9;
+    --terracotta: #B5532A;
+    --night: #15100C;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -62,39 +62,49 @@
     padding: 2rem;
     position: relative;
     overflow: hidden;
-    /* Swap this gradient for `url('assets/photos/hero.jpg') center/cover` once a hero photo lands. */
-    background: linear-gradient(150deg, #3a1d12 0%, var(--deep-earth) 45%, #140a05 100%);
+    /* Swap background-color for `url('assets/photos/hero.jpg') center/cover` once a hero photo lands. */
+    background-color: var(--night);
     color: var(--warm-cream);
   }
 
-  /* Pop-art color glows (sampled from the band poster) */
+  /* Desert-dusk glows: sun-orange + turquoise (bridges wax fabric & high desert) */
   .hero::before {
     content: '';
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 50% 45% at 22% 28%, rgba(31,165,151,0.30) 0%, transparent 60%),
-      radial-gradient(ellipse 45% 45% at 80% 22%, rgba(227,55,42,0.26) 0%, transparent 55%),
-      radial-gradient(ellipse 55% 50% at 72% 85%, rgba(244,197,24,0.22) 0%, transparent 60%),
-      radial-gradient(ellipse 40% 40% at 28% 82%, rgba(181,53,155,0.20) 0%, transparent 60%);
+      radial-gradient(circle at 50% 40%, rgba(232,118,27,0.30) 0%, transparent 42%),
+      radial-gradient(ellipse 55% 50% at 16% 20%, rgba(43,182,201,0.22) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 45% at 86% 30%, rgba(232,118,27,0.16) 0%, transparent 60%);
     pointer-events: none;
   }
 
-  /* Halftone dot texture */
+  /* Mudcloth / Pueblo geometric weave */
   .hero::after {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(rgba(244,197,24,0.14) 1.4px, transparent 1.7px);
-    background-size: 14px 14px;
-    mix-blend-mode: overlay;
-    opacity: 0.6;
+    background-image: url('assets/patterns/wax-weave.svg');
+    background-size: 120px 120px;
+    opacity: 0.16;
+    pointer-events: none;
+  }
+
+  /* High-desert mesa horizon */
+  .hero-ridge {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30vh;
+    background: url('assets/patterns/mesa-ridge.svg') bottom center / 100% 100% no-repeat;
+    z-index: 1;
     pointer-events: none;
   }
 
   .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     animation: fadeUp 1s ease-out;
   }
 
@@ -104,20 +114,24 @@
   }
 
   .band-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(4rem, 12vw, 9rem);
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    line-height: 0.9;
-    color: var(--warm-cream);
-    margin-bottom: 0.5rem;
+    font-family: 'Monoton', 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 11vw, 7.5rem);
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 0.85rem;
+    text-shadow:
+      2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000,
+      0 0 20px rgba(232,118,27,0.45),
+      8px 10px 16px rgba(0,0,0,0.55);
   }
 
   .band-tagline {
     font-size: clamp(0.85rem, 2vw, 1.1rem);
     letter-spacing: 0.35em;
     text-transform: uppercase;
-    color: var(--ochre);
+    color: var(--turquoise);
     margin-bottom: 2.5rem;
     font-weight: 500;
   }
@@ -125,8 +139,8 @@
   .hero-cta {
     display: inline-block;
     padding: 0.9rem 2.8rem;
-    border: 1.5px solid var(--pop-yellow);
-    color: var(--pop-yellow);
+    border: 1.5px solid var(--orange);
+    color: var(--orange);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -136,8 +150,8 @@
   }
 
   .hero-cta:hover {
-    background: var(--pop-yellow);
-    color: var(--deep-earth);
+    background: var(--orange);
+    color: var(--night);
   }
 
   /* ── SHARED SECTION STYLES ── */
@@ -532,6 +546,7 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-ridge" aria-hidden="true"></div>
     <div class="hero-content">
       <h1 class="band-name">SANJI</h1>
       <p class="band-tagline">West African Roots · Modern Fire</p>

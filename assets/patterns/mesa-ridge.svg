@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="320" viewBox="0 0 1440 320" preserveAspectRatio="none">
+  <!-- Taos high-desert mesa/mountain horizon, layered for depth -->
+  <path d="M0 320 L0 210 L150 175 L330 205 L520 150 L700 195 L900 140 L1120 190 L1300 160 L1440 185 L1440 320 Z"
+        fill="#1c1410" fill-opacity="0.9"/>
+  <path d="M0 320 L0 250 L180 200 L360 245 L560 175 L760 235 L980 165 L1200 225 L1440 185 L1440 320 Z"
+        fill="#0c0a06"/>
+  <path d="M0 250 L180 200 L360 245 L560 175 L760 235 L980 165 L1200 225 L1440 185"
+        fill="none" stroke="#E8761B" stroke-width="2.5" stroke-opacity="0.55"/>
+</svg>
