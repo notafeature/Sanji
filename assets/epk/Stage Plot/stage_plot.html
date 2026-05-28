@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stage Plot — West African Ensemble</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg2: #f5f5f0;
+    --text: #1a1a1a;
+    --text2: #666666;
+    --text3: #999999;
+    --border: #c8c8c0;
+    --purple-fill: #EEEDFE;
+    --purple-stroke: #534AB7;
+    --purple-title: #3C3489;
+    --purple-sub: #534AB7;
+    --coral-fill: #FAECE7;
+    --coral-stroke: #993C1D;
+    --coral-title: #712B13;
+    --coral-sub: #993C1D;
+    --amber-fill: #FAEEDA;
+    --amber-stroke: #854F0B;
+    --amber-title: #633806;
+    --amber-sub: #854F0B;
+    --blue-fill: #E6F1FB;
+    --blue-stroke: #185FA5;
+    --blue-text: #0C447C;
+    --gray-fill: #F1EFE8;
+    --gray-stroke: #888780;
+    --gray-text: #5F5E5A;
+    --wedge: #888888;
+    --audience-fill: #f0f0ec;
+    --audience-text: #aaaaaa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1a;
+      --bg2: #2c2c2a;
+      --text: #e8e6de;
+      --text2: #9c9a92;
+      --text3: #73726c;
+      --border: #444441;
+      --purple-fill: #3C3489;
+      --purple-stroke: #AFA9EC;
+      --purple-title: #CECBF6;
+      --purple-sub: #AFA9EC;
+      --coral-fill: #712B13;
+      --coral-stroke: #F0997B;
+      --coral-title: #F5C4B3;
+      --coral-sub: #F0997B;
+      --amber-fill: #633806;
+      --amber-stroke: #FAC775;
+      --amber-title: #FAEEDA;
+      --amber-sub: #FAC775;
+      --blue-fill: #0C447C;
+      --blue-stroke: #85B7EB;
+      --blue-text: #B5D4F4;
+      --gray-fill: #444441;
+      --gray-stroke: #B4B2A9;
+      --gray-text: #D3D1C7;
+      --wedge: #9c9a92;
+      --audience-fill: #2c2c2a;
+      --audience-text: #73726c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 24px;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 820px;
+  }
+  svg { width: 100%; height: auto; }
+  svg text { font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<svg viewBox="0 0 680 580" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Stage floor -->
+<rect x="30" y="50" width="620" height="400" rx="10" fill="var(--bg2)" fill-opacity="0.3" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="5 5"/>
+<text x="340" y="72" text-anchor="middle" font-size="12" fill="var(--text3)" opacity="0.5">upstage</text>
+<text x="340" y="440" text-anchor="middle" font-size="12" fill="var(--text3)" opacity="0.5">downstage</text>
+
+<!-- V guide lines -->
+<line x1="290" y1="185" x2="95" y2="395" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="3 8" opacity="0.2"/>
+<line x1="350" y1="185" x2="530" y2="350" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="3 8" opacity="0.2"/>
+
+<!-- DUNDUN -->
+<rect x="250" y="90" width="160" height="58" rx="8" fill="var(--amber-fill)" stroke="var(--amber-stroke)" stroke-width="0.5"/>
+<text x="330" y="112" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="var(--amber-title)">Dundun</text>
+<text x="330" y="132" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--amber-sub)">backline</text>
+<circle cx="268" cy="80" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="268" y="80" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">16</text>
+<circle cx="392" cy="80" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="392" y="80" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">17</text>
+
+<!-- Ch 18 kick -->
+<circle cx="345" cy="168" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="345" y="168" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">18</text>
+<text x="362" y="168" text-anchor="start" font-size="12" fill="var(--text3)" opacity="0.5">kick</text>
+
+<!-- NGONI 3 -->
+<rect x="200" y="185" width="118" height="52" rx="8" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="0.5"/>
+<text x="259" y="203" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="var(--purple-title)">Ngoni 3</text>
+<text x="259" y="223" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--purple-sub)">vox · DI (·DI)</text>
+<circle cx="196" cy="182" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="196" y="182" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">7</text>
+<circle cx="322" cy="182" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="322" y="182" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">8</text>
+<circle cx="322" cy="240" r="9" fill="var(--gray-fill)" stroke="var(--gray-stroke)" stroke-width="0.5" stroke-dasharray="2 2"/>
+<text x="322" y="240" text-anchor="middle" dominant-baseline="central" font-size="10" fill="var(--gray-text)">9</text>
+
+<!-- NGONI 2 -->
+<rect x="122" y="275" width="118" height="52" rx="8" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="0.5"/>
+<text x="181" y="293" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="var(--purple-title)">Ngoni 2</text>
+<text x="181" y="313" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--purple-sub)">vox · DI (·DI)</text>
+<circle cx="118" cy="272" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="118" y="272" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">4</text>
+<circle cx="244" cy="272" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="244" y="272" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">5</text>
+<circle cx="244" cy="330" r="9" fill="var(--gray-fill)" stroke="var(--gray-stroke)" stroke-width="0.5" stroke-dasharray="2 2"/>
+<text x="244" y="330" text-anchor="middle" dominant-baseline="central" font-size="10" fill="var(--gray-text)">6</text>
+
+<!-- NGONI 1 -->
+<rect x="44" y="365" width="118" height="52" rx="8" fill="var(--purple-fill)" stroke="var(--purple-stroke)" stroke-width="0.5"/>
+<text x="103" y="383" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="var(--purple-title)">Ngoni 1</text>
+<text x="103" y="403" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--purple-sub)">vox · DI (·DI)</text>
+<circle cx="40" cy="362" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="40" y="362" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">1</text>
+<circle cx="166" cy="362" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="166" y="362" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">2</text>
+<circle cx="166" cy="420" r="9" fill="var(--gray-fill)" stroke="var(--gray-stroke)" stroke-width="0.5" stroke-dasharray="2 2"/>
+<text x="166" y="420" text-anchor="middle" dominant-baseline="central" font-size="10" fill="var(--gray-text)">3</text>
+
+<!-- DJEMBE -->
+<rect x="420" y="240" width="118" height="52" rx="8" fill="var(--coral-fill)" stroke="var(--coral-stroke)" stroke-width="0.5"/>
+<text x="479" y="258" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="var(--coral-title)">Djembe</text>
+<text x="479" y="278" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--coral-sub)">inst · vox</text>
+<circle cx="416" cy="237" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="416" y="237" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">10</text>
+<circle cx="542" cy="237" r="9" fill="var(--gray-fill)" stroke="var(--gray-stroke)" stroke-width="0.5" stroke-dasharray="2 2"/>
+<text x="542" y="237" text-anchor="middle" dominant-baseline="central" font-size="10" fill="var(--gray-text)">11</text>
+
+<!-- CALABASH -->
+<rect x="478" y="320" width="118" height="52" rx="8" fill="var(--coral-fill)" stroke="var(--coral-stroke)" stroke-width="0.5"/>
+<text x="537" y="338" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="var(--coral-title)">Calabash</text>
+<text x="537" y="358" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--coral-sub)">cal · vox</text>
+<circle cx="474" cy="317" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="474" y="317" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">12</text>
+<circle cx="600" cy="317" r="9" fill="var(--gray-fill)" stroke="var(--gray-stroke)" stroke-width="0.5" stroke-dasharray="2 2"/>
+<text x="600" y="317" text-anchor="middle" dominant-baseline="central" font-size="10" fill="var(--gray-text)">13</text>
+
+<!-- PERC OVERHEADS -->
+<circle cx="416" cy="300" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="416" y="300" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">14</text>
+<text x="400" y="300" text-anchor="end" font-size="12" fill="var(--text3)" opacity="0.5">OH L</text>
+<circle cx="530" cy="425" r="10" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="530" y="425" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="var(--blue-text)">15</text>
+<text x="548" y="425" text-anchor="start" font-size="12" fill="var(--text3)" opacity="0.5">OH R</text>
+
+<!-- MONITOR WEDGES -->
+<polygon points="210,425 202,415 218,415" fill="var(--wedge)"/>
+<text x="210" y="413" text-anchor="middle" font-size="12" fill="var(--wedge)" opacity="0.6">W1</text>
+<polygon points="340,425 332,415 348,415" fill="var(--wedge)"/>
+<text x="340" y="413" text-anchor="middle" font-size="12" fill="var(--wedge)" opacity="0.6">W2</text>
+<polygon points="490,425 482,415 498,415" fill="var(--wedge)"/>
+<text x="490" y="413" text-anchor="middle" font-size="12" fill="var(--wedge)" opacity="0.6">W3</text>
+
+<!-- AUDIENCE -->
+<rect x="100" y="475" width="480" height="48" rx="14" fill="var(--audience-fill)" stroke="var(--border)" stroke-width="0.5"/>
+<text x="340" y="502" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="var(--audience-text)">Audience</text>
+
+<!-- ORCHESTRA -->
+<rect x="40" y="120" width="82" height="55" rx="6" fill="none" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="3 5"/>
+<text x="81" y="144" text-anchor="middle" font-size="12" fill="var(--text3)" opacity="0.6">Orchestra</text>
+<text x="81" y="160" text-anchor="middle" font-size="12" fill="var(--text3)" opacity="0.6">(optional)</text>
+
+<!-- LEGEND -->
+<circle cx="46" cy="545" r="7" fill="var(--blue-fill)" stroke="var(--blue-stroke)" stroke-width="0.5"/>
+<text x="58" y="548" font-size="12" fill="var(--text2)">Required channel</text>
+<circle cx="195" cy="545" r="7" fill="var(--gray-fill)" stroke="var(--gray-stroke)" stroke-width="0.5" stroke-dasharray="2 2"/>
+<text x="207" y="548" font-size="12" fill="var(--text2)">Optional / vocal</text>
+<polygon points="340,549 334,541 346,541" fill="var(--wedge)"/>
+<text x="352" y="548" font-size="12" fill="var(--text2)">Monitor wedge</text>
+
+</svg>
+</div>
+</body>
+</html>
