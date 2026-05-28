@@ -457,47 +457,41 @@
     gap: 0.3rem;
     text-decoration: none;
     padding: 1.8rem 4rem;
+    background: var(--ochre);
     border: 2px solid var(--ochre);
-    transition: all 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
     position: relative;
   }
 
   .press-kit-link:hover {
-    background: var(--ochre);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.35);
   }
 
   .press-kit-label {
     font-size: 0.65rem;
     letter-spacing: 0.35em;
     text-transform: uppercase;
-    color: var(--dust);
-    font-weight: 500;
-  }
-
-  .press-kit-link:hover .press-kit-label {
     color: var(--deep-earth);
+    font-weight: 600;
+    opacity: 0.8;
   }
 
   .press-kit-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1.3rem, 3vw, 1.8rem);
     font-weight: 700;
-    color: var(--ochre);
-    letter-spacing: 0.05em;
-  }
-
-  .press-kit-link:hover .press-kit-title {
     color: var(--deep-earth);
+    letter-spacing: 0.05em;
   }
 
   .press-kit-arrow {
     font-size: 1.2rem;
-    color: var(--ochre);
+    color: var(--deep-earth);
     transition: transform 0.3s ease;
   }
 
   .press-kit-link:hover .press-kit-arrow {
-    color: var(--deep-earth);
     transform: translateX(6px);
   }
 
