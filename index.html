@@ -7,7 +7,7 @@
 <meta name="description" content="SANJI — West African roots music with modern fire. Five musicians channeling the Kamale N'goni, djembe, and voice into something visceral, danceable, and alive. Available for booking.">
 <meta name="theme-color" content="#2C1810">
 <link rel="canonical" href="https://sanji.band/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon_ngoni.png" type="image/png">
 
 <!-- Open Graph / social sharing -->
 <meta property="og:type" content="website">
@@ -23,7 +23,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&family=Monoton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --ochre: #C4873B;
@@ -102,17 +102,13 @@
   }
 
   .band-name {
-    font-family: 'Monoton', 'Cormorant Garamond', serif;
-    font-size: clamp(3rem, 11vw, 7.5rem);
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    line-height: 1;
-    color: #fff;
-    margin-bottom: 0.85rem;
-    text-shadow:
-      2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000,
-      0 0 20px rgba(232,118,27,0.45),
-      8px 10px 16px rgba(0,0,0,0.55);
+    display: block;
+    width: clamp(280px, 70vw, 640px);
+    height: auto;
+    margin: 0 auto 1rem;
+    filter:
+      drop-shadow(0 0 24px rgba(232,118,27,0.35))
+      drop-shadow(0 8px 14px rgba(0,0,0,0.55));
   }
 
   .band-tagline {
@@ -564,7 +560,7 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <h1 class="band-name">SANJI</h1>
+      <img class="band-name" src="assets/logos/sanji-logo-transparent.png" alt="SANJI" width="965" height="259">
       <p class="band-tagline">West African Roots · Modern Fire</p>
       <a href="#contact" class="hero-cta">Book Us</a>
     </div>
