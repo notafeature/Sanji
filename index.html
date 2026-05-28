@@ -508,6 +508,35 @@
     .press-kit-link { padding: 1.4rem 2.5rem; }
   }
 
+  /* ── DARK-SECTION WAX TEXTURE (mudcloth weave over deep-earth) ── */
+  .video-section,
+  .contact,
+  .press-kit-banner {
+    position: relative;
+    overflow: hidden;
+  }
+  .video-section::before,
+  .contact::before,
+  .press-kit-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/patterns/wax-weave.svg');
+    background-repeat: repeat;
+    pointer-events: none;
+  }
+  /* Per-section variance so they don't feel identical */
+  .video-section::before    { background-size: 120px 120px; opacity: 0.14; }
+  .contact::before          { background-size: 132px 132px; opacity: 0.12; }
+  .press-kit-banner::before { background-size: 96px  96px;  opacity: 0.15; }
+
+  /* Keep content above the texture */
+  .video-section > *,
+  .contact > *,
+  .press-kit-banner > * {
+    position: relative;
+  }
+
   .copyright {
     text-align: center;
     padding: 1.5rem;
