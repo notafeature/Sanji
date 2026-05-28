@@ -2,10 +2,10 @@
   <!-- Mudcloth / Pueblo geometric weave: chevrons, triangles, dots -->
   <g fill="none" stroke-width="3" stroke-linecap="round">
     <path d="M0 30 L30 0 L60 30 L90 0 L120 30" stroke="#E8761B"/>
-    <path d="M0 90 L30 60 L60 90 L90 60 L120 90" stroke="#2BB6C9"/>
+    <path d="M0 60 L30 90 L60 60 L90 90 L120 60" stroke="#2BB6C9"/>
   </g>
   <g>
-    <polygon points="60,38 71,58 49,58" fill="#2BB6C9"/>
+    <polygon points="60,58 71,38 49,38" fill="#2BB6C9"/>
     <polygon points="0,98 11,118 -11,118" fill="#E8761B"/>
     <polygon points="120,98 131,118 109,118" fill="#E8761B"/>
     <circle cx="60" cy="108" r="3.2" fill="#E8761B"/>
