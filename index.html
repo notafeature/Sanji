@@ -62,43 +62,31 @@
     padding: 2rem;
     position: relative;
     overflow: hidden;
-    /* Swap background-color for `url('assets/photos/hero.jpg') center/cover` once a hero photo lands. */
-    background-color: var(--night);
+    /* Taos night-sky aurora as hero photo; dark gradient overlay keeps wordmark legible. */
+    background:
+      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)),
+      url('assets/photos/taos-aurora.jpg') center bottom / cover no-repeat,
+      var(--night);
     color: var(--warm-cream);
   }
 
-  /* Desert-dusk glows: sun-orange + turquoise (bridges wax fabric & high desert) */
+  /* Cinematic vignette */
   .hero::before {
     content: '';
     position: absolute;
     inset: 0;
-    background:
-      radial-gradient(circle at 50% 40%, rgba(232,118,27,0.30) 0%, transparent 42%),
-      radial-gradient(ellipse 55% 50% at 16% 20%, rgba(43,182,201,0.22) 0%, transparent 60%),
-      radial-gradient(ellipse 50% 45% at 86% 30%, rgba(232,118,27,0.16) 0%, transparent 60%);
+    background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.5) 100%);
     pointer-events: none;
   }
 
-  /* Mudcloth / Pueblo geometric weave */
+  /* Mudcloth / Pueblo geometric weave (subtle over the photo) */
   .hero::after {
     content: '';
     position: absolute;
     inset: 0;
     background-image: url('assets/patterns/wax-weave.svg');
     background-size: 120px 120px;
-    opacity: 0.16;
-    pointer-events: none;
-  }
-
-  /* High-desert mesa horizon */
-  .hero-ridge {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 30vh;
-    background: url('assets/patterns/mesa-ridge.svg') bottom center / 100% 100% no-repeat;
-    z-index: 1;
+    opacity: 0.10;
     pointer-events: none;
   }
 
@@ -546,7 +534,6 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-ridge" aria-hidden="true"></div>
     <div class="hero-content">
       <h1 class="band-name">SANJI</h1>
       <p class="band-tagline">West African Roots · Modern Fire</p>
