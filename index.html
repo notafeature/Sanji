@@ -283,14 +283,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.25rem;
+    padding: 0.5rem;
+    background: radial-gradient(ellipse at center,
+      rgba(248,235,210,0.62) 0%,
+      rgba(248,235,210,0.3) 42%,
+      transparent 70%);
+    border-radius: 6px;
   }
 
-  /* Wide placeholder for Salamander banner */
+  /* Wide placeholder for Salamander banner — no gradient, screen blend handles it */
   .festival-logo-placeholder.wide {
     width: 420px;
     max-width: 88%;
     height: 105px;
+    background: none;
   }
 
   .festival-logo-text {
@@ -308,6 +314,9 @@
     max-height: 100%;
     object-fit: contain;
     display: block;
+  }
+
+  .festival-logo.screen {
     mix-blend-mode: screen;
   }
 
@@ -673,7 +682,7 @@
         </div>
         <div class="festival-item">
           <div class="festival-logo-placeholder">
-            <img class="festival-logo" src="assets/logos/Festival%20Logos/crestone%20energy%20fair.webp" alt="Crestone Energy Fair" loading="lazy">
+            <img class="festival-logo screen" src="assets/logos/Festival%20Logos/crestone%20energy.webp" alt="Crestone Energy Fair" loading="lazy">
           </div>
           <span class="festival-caption">Crestone Energy Fair</span>
         </div>
@@ -697,7 +706,7 @@
         </div>
         <div class="festival-item">
           <div class="festival-logo-placeholder wide">
-            <img class="festival-logo" src="assets/logos/Festival%20Logos/salamander-fest-banner.png" alt="Salamander Fest" loading="lazy">
+            <img class="festival-logo screen" src="assets/logos/Festival%20Logos/salamander-fest-banner.png" alt="Salamander Fest" loading="lazy">
           </div>
           <span class="festival-caption">Salamander Fest</span>
         </div>
