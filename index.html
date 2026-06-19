@@ -227,13 +227,18 @@
 
   /* ── FESTIVALS ── */
   .festivals { background: var(--deep-earth); text-align: center; }
-  .festivals .section-label { color: var(--ochre); }
+
+  .festivals .section-label {
+    color: var(--ochre);
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+  }
 
   .festival-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 3rem 1.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     align-items: center;
     justify-items: center;
   }
@@ -262,13 +267,6 @@
     padding: 0.25rem;
   }
 
-  /* White-bg logos get a subtle card on dark bg */
-  .festival-logo-placeholder.card {
-    background: rgba(255,255,255,0.93);
-    border-radius: 5px;
-    padding: 8px 12px;
-  }
-
   /* Wide placeholder for Salamander banner */
   .festival-logo-placeholder.wide {
     width: 360px;
@@ -291,18 +289,14 @@
     max-height: 100%;
     object-fit: contain;
     display: block;
-  }
-
-  /* Screen blend: knocks out dark backgrounds (Salamander) */
-  .festival-logo.screen {
     mix-blend-mode: screen;
   }
 
   .festival-caption {
-    font-size: 0.62rem;
-    letter-spacing: 0.15em;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(245,237,224,0.4);
+    color: rgba(245,237,224,0.65);
   }
 
   /* ── MEMBERS ACCORDION ── */
@@ -652,25 +646,25 @@
       <p class="section-label">Headlining and Main Stage Performances</p>
       <div class="festival-grid">
         <div class="festival-item">
-          <div class="festival-logo-placeholder card">
+          <div class="festival-logo-placeholder">
             <img class="festival-logo" src="assets/logos/Festival%20Logos/globalquerque.AVIF" alt="Globalquerque" loading="lazy">
           </div>
           <span class="festival-caption">Globalquerque</span>
         </div>
         <div class="festival-item">
-          <div class="festival-logo-placeholder card">
+          <div class="festival-logo-placeholder">
             <img class="festival-logo" src="assets/logos/Festival%20Logos/crestone%20energy%20fair.webp" alt="Crestone Energy Fair" loading="lazy">
           </div>
           <span class="festival-caption">Crestone Energy Fair</span>
         </div>
         <div class="festival-item">
-          <div class="festival-logo-placeholder card">
+          <div class="festival-logo-placeholder">
             <img class="festival-logo" src="assets/logos/Festival%20Logos/unison-logo-256x256-1-1024x1024.png" alt="Unison Festival" loading="lazy">
           </div>
           <span class="festival-caption">Unison Festival</span>
         </div>
         <div class="festival-item">
-          <div class="festival-logo-placeholder card">
+          <div class="festival-logo-placeholder">
             <img class="festival-logo" src="assets/logos/Festival%20Logos/tribal-vision.webp" alt="Tribal Vision Festival" loading="lazy">
           </div>
           <span class="festival-caption">Tribal Vision Festival</span>
@@ -683,7 +677,7 @@
         </div>
         <div class="festival-item">
           <div class="festival-logo-placeholder wide">
-            <img class="festival-logo screen" src="assets/logos/Festival%20Logos/salamander-fest-banner.png" alt="Salamander Fest" loading="lazy">
+            <img class="festival-logo" src="assets/logos/Festival%20Logos/salamander-fest-banner.png" alt="Salamander Fest" loading="lazy">
           </div>
           <span class="festival-caption">Salamander Fest</span>
         </div>
