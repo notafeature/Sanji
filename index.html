@@ -289,10 +289,9 @@
     justify-content: center;
     padding: 0.5rem;
     background: radial-gradient(ellipse at center,
-      rgba(248,235,210,0.62) 0%,
-      rgba(248,235,210,0.3) 42%,
-      transparent 70%);
-    border-radius: 6px;
+      rgba(212,168,67,0.20) 0%,
+      rgba(212,168,67,0.06) 55%,
+      transparent 82%);
   }
 
   /* Wide placeholder for Salamander banner — no gradient, screen blend handles it */
@@ -322,6 +321,10 @@
 
   .festival-logo.screen {
     mix-blend-mode: screen;
+  }
+
+  .festival-logo.invert {
+    filter: invert(1);
   }
 
   .festival-caption {
@@ -676,7 +679,7 @@
   <!-- FESTIVALS -->
   <section class="festivals">
     <div class="container">
-      <h2 class="festivals-title">Main Stages</h2>
+      <h2 class="festivals-title">Headlining &amp; Main Stage Performances</h2>
       <div class="festival-grid">
         <div class="festival-item">
           <div class="festival-logo-placeholder">
@@ -686,7 +689,7 @@
         </div>
         <div class="festival-item">
           <div class="festival-logo-placeholder">
-            <img class="festival-logo screen" src="assets/logos/Festival%20Logos/crestone%20energy.webp" alt="Crestone Energy Fair" loading="lazy">
+            <img class="festival-logo" src="assets/logos/Festival%20Logos/crestone%20energy.webp" alt="Crestone Energy Fair" loading="lazy">
           </div>
           <span class="festival-caption">Crestone Energy Fair</span>
         </div>
@@ -698,7 +701,7 @@
         </div>
         <div class="festival-item">
           <div class="festival-logo-placeholder">
-            <img class="festival-logo" src="assets/logos/Festival%20Logos/tribal-vision.webp" alt="Tribal Vision Festival" loading="lazy">
+            <img class="festival-logo invert screen" src="assets/logos/Festival%20Logos/tribal-vision.webp" alt="Tribal Vision Festival" loading="lazy">
           </div>
           <span class="festival-caption">Tribal Vision Festival</span>
         </div>
