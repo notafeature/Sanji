@@ -247,10 +247,14 @@
     z-index: 1;
   }
 
-  .festivals .section-label {
+  .festivals-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 600;
     color: var(--ochre);
-    font-size: 0.8rem;
-    letter-spacing: 0.35em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
   }
 
   .festival-grid {
@@ -672,7 +676,7 @@
   <!-- FESTIVALS -->
   <section class="festivals">
     <div class="container">
-      <p class="section-label">Main Stages</p>
+      <h2 class="festivals-title">Main Stages</h2>
       <div class="festival-grid">
         <div class="festival-item">
           <div class="festival-logo-placeholder">
