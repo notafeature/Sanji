@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{> head}}
+<meta name="robots" content="noindex">
+<style>
+{{> base.css}}
+  body {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background:
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
+      url('assets/photos/taos-aurora.webp') center bottom / cover no-repeat,
+      var(--night);
+    color: var(--warm-cream);
+  }
+  .nf-logo { width: clamp(200px, 40vw, 360px); height: auto; margin: 0 auto 1.5rem; display: block; }
+  h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 600; margin-bottom: 0.5rem; }
+  p { color: var(--dust); margin-bottom: 2rem; }
+  .nf-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .nf-links a {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: 1.5px solid var(--orange);
+    color: var(--orange);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  .nf-links a:hover { background: var(--orange); color: var(--night); }
+</style>
+</head>
+<body>
+  <main>
+    <img class="nf-logo" src="/{{wordmark.src}}" alt="{{site.name}}" width="{{wordmark.width}}" height="{{wordmark.height}}">
+    <h1>That page has wandered off.</h1>
+    <p>The link may be old, or mistyped. Everything you need is one click away.</p>
+    <nav class="nf-links">
+      <a href="/">Home</a>
+      <a href="/{{pages.pressKit.file}}">Press Kit</a>
+    </nav>
+  </main>
+</body>
+</html>

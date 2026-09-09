@@ -1,0 +1,172 @@
+{
+  "site": {
+    "name": "SANJI",
+    "url": "https://sanji.band",
+    "tagline": "West African Roots · Modern Fire",
+    "shortPitch": "Heavy roots. Super danceable. A bridge between ancient West African tradition and the present moment.",
+    "themeColor": "#2C1810",
+    "favicon": "favicon_ngoni.png",
+    "wordmark": "assets/logos/sanji-logo.webp",
+    "logoHiRes": "assets/logos/sanji-logo-hd.png",
+    "ogImage": "assets/photos/og-cover.jpg",
+    "goatcounter": "https://sanji-band.goatcounter.com/count",
+    "copyrightHolder": "SANJI · Spirit Rain Music"
+  },
+
+  "band": {
+    "basedIn": "Taos, NM, USA",
+    "locality": "Taos",
+    "region": "NM",
+    "country": "US",
+    "genreLine": "West African roots / world-fusion, Percussion and Dance, Petricore",
+    "genres": ["West African roots", "World fusion", "Percussion and dance"],
+    "coreInstruments": "Kamale N'goni, Djembe, Dunun, Calabash, Vocals, Karinyan",
+    "setLengths": "45, 60, 90, or 120 minute sets"
+  },
+
+  "pages": {
+    "index": {
+      "file": "index.html",
+      "path": "/",
+      "title": "SANJI | West African Roots Music from Taos, New Mexico",
+      "description": "SANJI is a West African roots band from Taos, New Mexico: four artists channeling the kamale n'goni, djembe, and voice into something visceral and alive. Heavy roots. Super danceable. Book SANJI for festivals and venues.",
+      "ogTitle": "SANJI | West African Roots Music",
+      "ogDescription": "Heavy roots. Super danceable. West African roots music from Taos, New Mexico. Book SANJI for festivals and venues."
+    },
+    "pressKit": {
+      "file": "sanji-press-kit.html",
+      "path": "/sanji-press-kit.html",
+      "title": "SANJI Press Kit | Bio, Lineup, Stage Plot & Tech Rider",
+      "description": "Electronic press kit for SANJI, West African roots music from Taos, NM. Band bio, lineup, headlining history, stage plot, input list, tech rider, logo, and high-res photos for venues, festivals, and press, plus the booking contact.",
+      "ogTitle": "SANJI Press Kit: Bio, Stage Plot, Tech Rider & Photos",
+      "ogDescription": "Everything a venue, festival, or writer needs to book and present SANJI: bio, lineup, stage plot, input list, tech rider, logo, photos, and booking contact."
+    },
+    "notFound": {
+      "file": "404.html",
+      "path": "/404.html",
+      "title": "Page not found | SANJI",
+      "description": "That page does not exist. Head back to sanji.band or the SANJI press kit."
+    }
+  },
+
+  "about": {
+    "label": "Why This Music Matters",
+    "lead": "This music is older than all of us. Born from the <em>Donso</em> hunter's tradition of West Africa, the kamale n'goni carries a healing resonance that has moved people to tears, to joy, and through profound transformation for centuries.",
+    "body": "SANJI brings these ancient instruments into a contemporary context. Four artists channeling the deep-rooted power of the Kamale N'goni, djembe, and voice into something visceral and alive. Heavy roots. Super danceable. A bridge between tradition and the present moment."
+  },
+
+  "video": {
+    "label": "Live",
+    "youtubeId": "EojWn3z9sKM",
+    "title": "SANJI live performance"
+  },
+
+  "stagesShared": {
+    "label": "Stages Shared",
+    "artists": [
+      "Bassekou Kouyaté",
+      "Mamadou Diabate",
+      "Sona Jobarteh",
+      "Mokoomba",
+      "Zar Electrik",
+      "Biko Casini",
+      "Snow Raven"
+    ]
+  },
+
+  "festivals": {
+    "title": "Headlining & Main Stage Performances",
+    "logos": [
+      { "name": "Globalquerque",               "file": "assets/logos/festivals/globalquerque.webp" },
+      { "name": "Crestone Energy Fair",        "file": "assets/logos/festivals/crestone-energy-fair.webp" },
+      { "name": "Unison Festival",             "file": "assets/logos/festivals/unison-festival.webp" },
+      { "name": "Tribal Vision Festival",      "file": "assets/logos/festivals/tribal-vision.webp", "treatment": "invert screen" },
+      { "name": "Convergence Wellness Festival","file": "assets/logos/festivals/convergence.webp" },
+      { "name": "Salamander Fest",             "file": "assets/logos/festivals/salamander-fest.webp", "treatment": "screen", "wide": true }
+    ],
+    "performances": [
+      { "name": "Crestone Energy Fair",         "role": "Headliner",  "years": "2025" },
+      { "name": "Crest Fest",                   "role": "Headliner",  "years": "2024" },
+      { "name": "Tribal Vision Festival",       "role": "Headliner",  "years": "2024, 2023, 2022" },
+      { "name": "Salamander Fest",              "role": "Headliner",  "years": "2022" },
+      { "name": "Gaia's Gathering",             "role": "Headliner",  "years": "2025, 2022" },
+      { "name": "Unison Festival",              "role": "Main Stage", "years": "2025" },
+      { "name": "Convergence Wellness Festival","role": "Main Stage", "years": "2024" },
+      { "name": "Globalquerque",                "role": "Main Stage", "years": "2025" }
+    ]
+  },
+
+  "members": {
+    "label": "The Band",
+    "people": [
+      {
+        "id": "miles-anderson",
+        "name": "Miles Anderson",
+        "roles": ["Kamale N'goni", "Lead Vocals", "Dunun"],
+        "photo": "assets/photos/members/miles-anderson.jpg",
+        "bio": "Miles Anderson grew up in Albuquerque, NM. He started playing drumkit when he was 9. He has been around music from the African diaspora since he was a little boy. His parents are world music fans, and he remembers going to dance parties with Albuquerque legends Wagogo banda as a child and listening to Ali Farka Touré on road trips. He has been building, studying, and playing kamale n'goni for 10+ years. He has traveled and studied in Bobo Dioulasso, Burkina Faso. His teachers include Arouna Diarra, Tani Diakite, and Siakka Diarra."
+      },
+      {
+        "id": "rob-usher",
+        "name": "Rob Usher",
+        "roles": ["Kamale N'goni", "Djembe", "Karinyan", "Calabash"],
+        "photo": "assets/photos/members/rob-usher.jpg",
+        "bio": "From the moment Rob Usher first picked up the kamale n'goni, he knew it was something he would follow for the rest of his life. Over the past 15 years, that first recognition has grown into a deep commitment to the study of traditional kamale n'goni music, shaped by long practice, close listening, and guidance from teachers including Mamadou Sidibe. His playing reflects both a broad technical range and a deep relationship to traditional repertoire, carried with care, discipline, and respect for the lineage. At the center of it is a simple devotion to the instrument itself: each time he holds the n’goni, he returns to the same joy and peace that first called him to it."
+      },
+      {
+        "id": "mitchell-olson",
+        "name": "Mitchell Olson",
+        "roles": ["Kamale N'goni", "Calabash", "Dunun", "Vocals"],
+        "photo": "assets/photos/members/mitchell-olson.jpg",
+        "bio": "Mitchell Olson knew from a young age that the whole world could be percussion. Growing up in Albuquerque in a creative community, with a visual artist mother and early jazz fusion influences at home, he was drawn early to rhythm, texture, and sound. After seeing Stomp at Popejoy Hall as a child, that instinct came fully alive: first on pots and pans at home, then on the drum kit he raised his own money to buy, and later under the guidance of Rob Janov in the Rockin’ Rhythm Band at Jefferson Middle School. His musical path moved through punk, ska, psychedelic rock, and experimental music, shaped along the way by Celtic sounds and deep involvement in central New Mexico’s African dance and drumming community. In his teens, being introduced to the kamale n’goni alongside Miles Anderson opened the path that would eventually lead to Sanji."
+      },
+      {
+        "id": "fred-simpson",
+        "name": "Fred Simpson",
+        "roles": ["Spiritual Advisor", "Calabash", "Djembe", "Vocals"],
+        "photo": "assets/photos/members/fred-simpson.jpg",
+        "bio": "Baba Fred Simpson began drumming as a toddler on his mother’s pots and pans. He received his first conga drum at age 20 and began his professional career accompanying modern dance classes at UC Santa Cruz. From there, his path took him to New York City to work with the NYU School of the Arts, where he studied Congolese music and dance with Titos Sompa. Over the course of his career, he has continuously taught music, built drums, and studied traditions from Congo, Guinea, Senegal, Haiti, and beyond. His life in music has taken him to Africa six times, and he has remained deeply connected to the development of African dance companies in the United States, including the renowned Tanawa, Fua Dia Congo, and Chedo Senegalese Dance Companies. Currently based in Santa Fe, New Mexico, where he has lived for over 20 years, Baba Fred teaches Congolese music informed by a lifelong practice and deep connection to West African percussion from Guinea in the tradition of his teacher and friend, Mamady Keïta."
+      }
+    ]
+  },
+
+  "booking": {
+    "label": "Booking",
+    "title": "Managing Group Contact",
+    "email": "SpiritRainMusic@gmail.com"
+  },
+
+  "socials": [
+    { "name": "YouTube",   "url": "https://www.youtube.com/@SANJI_band" },
+    { "name": "Instagram", "url": "https://www.instagram.com/sanji_band/" }
+  ],
+
+  "pressKit": {
+    "ctaLabel": "For Bookers & Venues",
+    "ctaTitle": "Press Kit & Stage Plot",
+    "stagePlot": {
+      "title": "Stage Plot & Tech",
+      "image": "assets/epk/stage-plot.webp",
+      "alt": "SANJI stage plot: three kamale n'goni positions with vocal mics and DIs, djembe, calabash, dundun backline, two overheads, and three monitor wedges."
+    },
+    "downloads": {
+      "title": "Downloads",
+      "intro": "Logo, stage plot, tech rider, and high-res photos for venues and press.",
+      "items": [
+        { "label": "Logo (PNG)",       "href": "assets/logos/sanji-logo-hd.png" },
+        { "label": "Stage Plot (PDF)", "href": "assets/epk/Stage%20Plot/stage_plot_bw.pdf" },
+        { "label": "Tech Rider (PDF)", "href": "assets/epk/Stage%20Rider/Sanji%20EPK%20-%20Tech%20Rider.pdf" },
+        { "label": "Input List (PDF)", "href": "assets/epk/Stage%20Plot/Sanji_Input_List.pdf" }
+      ]
+    },
+    "photos": {
+      "title": "Photos",
+      "credit": "Hailey Jane",
+      "intro": "Click a photo for the full-resolution file (6000 × 4000). Please credit the photographer.",
+      "items": [
+        { "web": "assets/photos/band/sanji-unison-festival-01-web.jpg", "full": "assets/photos/band/sanji-unison-festival-01.jpg", "alt": "SANJI on the main stage at Unison Festival under a rainbow shade canopy, seen from behind the band, with a dancing crowd in the sun." },
+        { "web": "assets/photos/band/sanji-unison-festival-02-web.jpg", "full": "assets/photos/band/sanji-unison-festival-02.jpg", "alt": "Crowd at Unison Festival with hands in the air, seen from the SANJI stage." }
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+# Keeps the root HTML in sync with src/. Pages still deploys straight from main.
+#
+#  - push to main that touches src/ or the build: rebuild and commit the
+#    result back to main (which triggers the normal Pages deploy).
+#  - pull requests: fail if the committed HTML is stale, so the reviewer
+#    sees exactly what will ship.
+name: Build site
+
+on:
+  push:
+    branches: [main]
+    paths: ['src/**', 'build.js', 'package.json', 'package-lock.json']
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run build
+
+      - name: Check for drift (pull requests)
+        if: github.event_name == 'pull_request'
+        run: |
+          if ! git diff --quiet -- index.html sanji-press-kit.html 404.html; then
+            echo "::error::Committed HTML is out of date. Run 'npm run build' and commit the result."
+            git --no-pager diff --stat
+            exit 1
+          fi
+
+      - name: Commit rebuilt HTML (main)
+        if: github.event_name == 'push'
+        run: |
+          if git diff --quiet; then echo "Already up to date."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: rebuild site from src"
+          git push

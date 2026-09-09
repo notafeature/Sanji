@@ -1,0 +1,16 @@
+{
+  "name": "sanji-site",
+  "private": true,
+  "description": "sanji.band: static site + press kit, generated from src/content.json",
+  "scripts": {
+    "build": "node build.js",
+    "check": "node build.js --check",
+    "images": "node scripts/images.js",
+    "serve": "python3 -m http.server 8765"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": {
+    "mustache": "^4.2.0",
+    "sharp": "^0.33.5"
+  }
+}
