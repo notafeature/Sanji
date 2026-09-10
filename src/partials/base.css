@@ -15,6 +15,29 @@
     --pop-yellow: #F4C518;
   }
 
+  /* ── FONTS (self-hosted variable fonts, see scripts/fonts.py) ── */
+  @font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url('{{fontsBase}}assets/fonts/cormorant-garamond.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url('{{fontsBase}}assets/fonts/cormorant-garamond-italic.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url('{{fontsBase}}assets/fonts/dm-sans.woff2') format('woff2');
+  }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   @media (prefers-reduced-motion: reduce) {

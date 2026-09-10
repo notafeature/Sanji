@@ -110,7 +110,7 @@ const pageView = (key, ogType, extra) => {
 const pages = [
   { template: 'index.html',     page: pageView('index', 'website') },
   { template: 'press-kit.html', page: pageView('pressKit', 'article', { additionalType: 'https://schema.org/MediaObject', keywords: 'press kit, EPK, stage plot, tech rider, booking' }) },
-  { template: '404.html',       page: pageView('notFound', 'website') },
+  { template: '404.html',       page: pageView('notFound', 'website'), fontsBase: '/' },
 ];
 
 const partials = {
@@ -133,8 +133,8 @@ const baseView = {
 };
 
 const outputs = {};
-for (const { template, page } of pages) {
-  const html = Mustache.render(read(`templates/${template}`), { ...baseView, page }, partials);
+for (const { template, page, fontsBase = '' } of pages) {
+  const html = Mustache.render(read(`templates/${template}`), { ...baseView, page, fontsBase }, partials);
   outputs[page.file] = html.replace(/\n{3,}/g, '\n\n');
 }
 
