@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{page.title}}</title>
+<meta name="description" content="{{page.description}}">
+<meta name="theme-color" content="{{site.themeColor}}">
+<link rel="canonical" href="{{page.canonical}}">
+<link rel="icon" href="{{site.favicon}}" type="image/png">
+<link rel="apple-touch-icon" href="{{site.favicon}}">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="{{page.ogType}}">
+<meta property="og:site_name" content="{{site.name}}">
+<meta property="og:title" content="{{page.ogTitle}}">
+<meta property="og:description" content="{{page.ogDescription}}">
+<meta property="og:url" content="{{page.canonical}}">
+<meta property="og:image" content="{{page.ogImage.url}}">
+<meta property="og:image:width" content="{{page.ogImage.width}}">
+<meta property="og:image:height" content="{{page.ogImage.height}}">
+<meta property="og:image:alt" content="{{page.ogImage.alt}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{page.ogTitle}}">
+<meta name="twitter:description" content="{{page.ogDescription}}">
+<meta name="twitter:image" content="{{page.ogImage.url}}">
+
+<!-- Structured data (schema.org) -->
+<script type="application/ld+json">
+{{{page.jsonld}}}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">

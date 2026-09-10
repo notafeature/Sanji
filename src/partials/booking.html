@@ -1,0 +1,8 @@
+      <h2 class="booking-label">{{booking.label}}</h2>
+      <p class="booking-title">{{booking.title}}</p>
+      <p class="booking-email"><a href="mailto:{{booking.email}}">{{booking.email}}</a></p>
+      <nav class="socials" aria-label="SANJI on social media">
+        {{#socials}}
+        <a href="{{url}}" target="_blank" rel="me noopener">{{name}}</a>
+        {{/socials}}
+      </nav>

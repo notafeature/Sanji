@@ -1,0 +1,47 @@
+{
+  "revised": "September 2026",
+
+  "rider": {
+    "title": "Tech Rider",
+    "intro": "Four musicians on acoustic instruments: three kamale n'goni stations, djembe, calabash, and a dundun set of three drums. Channel numbers below match the stage plot and input list.",
+    "setLengths": "We play 45, 60, 90, or 120 minute sets.",
+    "needs": [
+      { "item": "DI boxes",           "detail": "3 minimum, one per kamale n'goni. 6 if available, so each n'goni can run a second DI.", "channels": "1, 4, 7 (2, 5, 8 optional)" },
+      { "item": "Vocal mics",         "detail": "5 vocal mics on boom stands: one at each n'goni station, one at the djembe, one at the calabash.", "channels": "3, 6, 9, 11, 13" },
+      { "item": "Djembe mic",         "detail": "1 dynamic mic (SM57 or similar) on a short or low kick stand, placed low.", "channels": "10" },
+      { "item": "Calabash mic",       "detail": "1 wired mic placed underneath the calabash shell, on a blanket on the band's table. Shure Beta 91A preferred; a kick mic also works well.", "channels": "12" },
+      { "item": "Percussion overheads", "detail": "2 overhead mics on boom stands, stage left and stage right of the percussion pair.", "channels": "14, 15" },
+      { "item": "Dundun mics",        "detail": "2 overhead mics on boom stands, stage left and stage right of the dundun set, plus 1 kick-style low mic on a floor stand.", "channels": "16, 17, 18" },
+      { "item": "Monitors",           "detail": "3 wedge mixes: W1 stage left, W2 center, W3 stage right.", "channels": "" }
+    ],
+    "channelSummary": "18 channels total. Channels 2, 5 and 8 are optional secondary DIs and can be dropped on a smaller console, for a 15 channel minimum.",
+    "bandProvides": "The band brings all instruments, the calabash table, and the blanket. Everything above is requested from the venue.",
+    "moreInfo": "Stage plot, input list, and this rider are in the press kit at sanji.band/sanji-press-kit.html."
+  },
+
+  "inputList": {
+    "title": "Input List",
+    "subtitle": "Channel numbers match the stage plot.",
+    "columns": ["Ch", "Source", "Mic / DI", "Stand", "Notes"],
+    "channels": [
+      { "ch": 1,  "source": "Ngoni 1",         "mic": "DI",           "stand": "none",        "notes": "Primary DI" },
+      { "ch": 2,  "source": "Ngoni 1",         "mic": "DI",           "stand": "none",        "notes": "Optional secondary DI", "optional": true },
+      { "ch": 3,  "source": "Ngoni 1 vocal",   "mic": "Vocal mic",    "stand": "Boom",        "notes": "" },
+      { "ch": 4,  "source": "Ngoni 2",         "mic": "DI",           "stand": "none",        "notes": "Primary DI" },
+      { "ch": 5,  "source": "Ngoni 2",         "mic": "DI",           "stand": "none",        "notes": "Optional secondary DI", "optional": true },
+      { "ch": 6,  "source": "Ngoni 2 vocal",   "mic": "Vocal mic",    "stand": "Boom",        "notes": "" },
+      { "ch": 7,  "source": "Ngoni 3",         "mic": "DI",           "stand": "none",        "notes": "Primary DI" },
+      { "ch": 8,  "source": "Ngoni 3",         "mic": "DI",           "stand": "none",        "notes": "Optional secondary DI", "optional": true },
+      { "ch": 9,  "source": "Ngoni 3 vocal",   "mic": "Vocal mic",    "stand": "Boom",        "notes": "" },
+      { "ch": 10, "source": "Djembe",          "mic": "SM57",         "stand": "Low kick",    "notes": "Low placement" },
+      { "ch": 11, "source": "Djembe vocal",    "mic": "Vocal mic",    "stand": "Boom",        "notes": "" },
+      { "ch": 12, "source": "Calabash",        "mic": "Wired mic",    "stand": "none",        "notes": "Placed underneath calabash shell on a blanket on the band-provided table. Beta 91A preferred; kick mic also works." },
+      { "ch": 13, "source": "Calabash vocal",  "mic": "Vocal mic",    "stand": "Boom",        "notes": "" },
+      { "ch": 14, "source": "Percussion OH L", "mic": "Overhead mic", "stand": "Boom",        "notes": "Stage-left side of percussion pair" },
+      { "ch": 15, "source": "Percussion OH R", "mic": "Overhead mic", "stand": "Boom",        "notes": "Stage-right side of percussion pair" },
+      { "ch": 16, "source": "Dundun OH L",     "mic": "Overhead mic", "stand": "Boom",        "notes": "Stage-left side of dundun set" },
+      { "ch": 17, "source": "Dundun OH R",     "mic": "Overhead mic", "stand": "Boom",        "notes": "Stage-right side of dundun set" },
+      { "ch": 18, "source": "Dundun low mic",  "mic": "Kick mic",     "stand": "Floor stand", "notes": "Low mic on backline" }
+    ]
+  }
+}

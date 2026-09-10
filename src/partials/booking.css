@@ -1,0 +1,75 @@
+  /* ── BOOKING (aurora cap, shared by both pages) ── */
+  .booking {
+    background:
+      linear-gradient(to bottom, rgba(21,16,12,0.45) 0%, rgba(21,16,12,0.80) 100%),
+      url('assets/photos/taos-aurora-footer.webp') center / cover no-repeat,
+      var(--night);
+    color: var(--warm-cream);
+    text-align: center;
+    padding: 4.5rem 2rem 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .booking::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/patterns/wax-weave.svg');
+    background-size: 132px 132px;
+    opacity: 0.12;
+    pointer-events: none;
+  }
+  .booking > * { position: relative; }
+
+  .booking-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  .booking-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+  }
+
+  .booking-email a {
+    color: var(--pop-yellow);
+    text-decoration: none;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+  }
+  .booking-email a:hover { color: var(--warm-cream); }
+
+  .socials {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .socials a {
+    color: var(--dust);
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.3s;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+  }
+
+  .socials a:hover {
+    color: var(--ochre);
+    border-bottom-color: var(--ochre);
+  }
+
+  @media (max-width: 600px) {
+    .socials { flex-direction: column; gap: 1rem; align-items: center; }
+  }
