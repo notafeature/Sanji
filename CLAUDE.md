@@ -4,5 +4,6 @@
 - `index.html`, `sanji-press-kit.html`, `404.html` and `sitemap.xml` are **generated**. Never edit them directly; edit the source and run `npm run build`, then commit both.
 - New or replaced images go through `scripts/images.js` (`npm run images`) so the build has their dimensions.
 - The tech rider and input list PDFs are generated from `src/epk.json` by `scripts/epk_docs.py` (`npm run docs`). Edit the JSON, regenerate, commit both.
+- Fonts are self-hosted (`assets/fonts/`, built by `scripts/fonts.py`). Do not add Google Fonts links back.
 - The EPK PDF paths under `assets/epk/` are linked from outside the site; do not rename them.
 - See README.md for the full workflow.

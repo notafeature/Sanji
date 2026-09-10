@@ -7,7 +7,8 @@
     "check": "node build.js --check",
     "images": "node scripts/images.js",
     "serve": "python3 -m http.server 8765",
-    "docs": "python3 scripts/epk_docs.py"
+    "docs": "python3 scripts/epk_docs.py",
+    "fonts": "python3 scripts/fonts.py"
   },
   "engines": {
     "node": ">=20"
