@@ -6,9 +6,12 @@
     "build": "node build.js",
     "check": "node build.js --check",
     "images": "node scripts/images.js",
-    "serve": "python3 -m http.server 8765"
+    "serve": "python3 -m http.server 8765",
+    "docs": "python3 scripts/epk_docs.py"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "devDependencies": {
     "mustache": "^4.2.0",
     "sharp": "^0.33.5"
